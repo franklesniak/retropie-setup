@@ -275,3 +275,29 @@ After a few moments, it will power on. The Raspberry Pi will take a few minutes 
 Enter your username, then press **Enter**.
     - Enter your password, then press **Enter**.
 
+### Update the Raspberry Pi, Including its Firmware
+
+**Note**: these steps assume that you are installing the latest stable firmware release (recommended).
+If, for some reason, you need to install a beta firmware instead of the latest stable release, check out [the rpi-update project](https://github.com/raspberrypi/rpi-update).
+
+1. At the terminal prompt, type the following commands:
+
+    ```bash
+    sudo apt update
+    sleep 2
+    sudo apt -y dist-upgrade
+
+    ```
+
+1. When the process completes, type the following command:
+
+    `sudo reboot`
+
+### Shut Down the Raspberry Pi
+
+1. After the reboot completes, enter your username and password to log back in.
+1. At the terminal prompt, type the following command:
+
+    `sudo shutdown now`
+
+1. When the Raspberry Pi completes its shutdown, remove the power cable, and then remove the microSD card.
