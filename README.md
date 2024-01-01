@@ -92,6 +92,12 @@ If you need one, I recommend one of the following:
 - For **all builds except handhelds**, you're also going to need **a TV or computer monitor** that supports an HDMI connection.
 I hope that you already have one of these!
 But, if you need a recommendation for a TV, you can't go wrong with an 83-inch LG C3 OLED: [LG C3 Series 83-Inch OLED TV - Affiliate Link](https://amzn.to/3tBKcLG) - **be sure to purchase one shipped and sold by Amazon**.
+- If you are building a non-handheld build, and if your setup supports it, an Ethernet cable.
+Use what you already have - but if you need to purchase one, I recommend one of the following:
+  - 3 Ft: [C2G Legrand CAT6a Ethernet Cable, Snagless Unshielded, Black, 3 Ft. - Affiliate Link](https://amzn.to/3NM1OLD)
+  - 6 Ft.: [C2G Legrand CAT6a Ethernet Cable, Snagless Unshielded, Black, 6 Ft. - Affiliate Link](https://amzn.to/3tBrGmO)
+  - 10 Ft.: [C2G Legrand CAT6a Ethernet Cable, Snagless Unshielded, Black, 10 Ft. - Affiliate Link](https://amzn.to/3NHPtrN)
+  - Other sizes available at the above links)
 
 ## Prepare the "Technician Computer"
 
