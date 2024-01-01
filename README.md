@@ -162,7 +162,7 @@ These steps are **required on Raspberry Pi 4B-based builds that use SATA or NVMe
 
 1. On the technician computer, extract the Raspberry Pi OS Lite `.img.xz` file:
     - Right-click on the `.img.xz` file, then click `NanaZip` > `Extract to "[year]-[month]-[date]-raspios-[version]-[platform]-lite.img\"`.
-2. Use balenaEtcher to load the image file onto your microSD card
+1. Use balenaEtcher to load the image file onto your microSD card
     - Insert your microSD card into the technician computer and open balenaEtcher.
     - In balenaEtcher, select `Flash from file`, then navigate to and select the image file you extracted.
 It should be in the `[year]-[month]-[date]-raspios-[version]-[platform]-lite.img` folder.
@@ -174,3 +174,50 @@ Click `Yes, I'm sure`.
     - You may receive a User Account Control (UAC) prompt to provide balenaEtcher with the required permissions to flash the microSD card.
 Approve the prompt and/or enter credentials when needed.
     - Close balenaEtcher when done.
+
+### Perform Initial Wireless Configuration
+
+These steps are only necessary if you intend to connect the Raspberry Pi to a Wi-Fi connection instead of a wired (Ethernet) connection.
+
+**Note**: you must know your wireless SSID and password _exactly_ (including the correct capitalization) to complete these steps.
+
+1. Remove and reconnect the microSD card to the Windows computer.
+1. Create the wireless settings file:
+    - Open Notepad++
+    - Click the icon to create a new file (or navigate to the `File` menu and click `New`).
+    - Click on the `Edit` menu, then click `EOL Conversion` > `Unix (LF)`
+    - Paste in template WiFi settings:
+
+        ```text
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+        update_config=1
+        country=US
+
+        network={
+        scan_ssid=1
+        ssid="MyNetworkSSID"
+        psk="WiFiPasswordHere"
+        key_mgmt=WPA-PSK
+        identity="home"
+        }
+
+        ```
+
+    - Replace `MyNetworkSSID` with the name of your wireless network's SSID.
+    - Replace `WiFiPasswordHere` with the pre-shared key of your wireless network.
+    - **Note**: for other types of wireless networks, review the reference material [here](https://w1.fi/cgit/hostap/plain/wpa_supplicant/wpa_supplicant.conf).
+1. If you want to configure one or more additional wireless networks:
+    - Add another `network={}` section by copying and pasting the template above, and then updating the values for the SSID and wireless password as noted previously.
+    - Make sure that the identity text for each wireless network is unique (e.g., "home", "work", etc.).
+1. Save the file.
+    - In the `Save As` dialog, box, change the `Save as type` to `All types`.
+    - Then, when prompted for a file name, with the microSD card still attached, navigate to the boot drive that appears in Computer (it may be labeled as `bootfs`).
+    - Enter the file name:
+
+      `wpa_supplicant.conf`
+
+      and then click `Save`.
+
+Keep Notepad++ open for the next step.
+
+**Note**: to read more about this process, see [this guide for preparing a microSD card for Wi-Fi](https://raspberrypi.stackexchange.com/a/57023/78201)
