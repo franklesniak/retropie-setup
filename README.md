@@ -244,3 +244,12 @@ Secure Shell (SSH) is a remote access protocol that we will use to connect to th
     - In a few moments, you should receive a `Safe to remove hardware` notification. Remove the microSD card.
     - If you do not receive the `Safe to remove hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the drive, then try again.
     - If you still cannot safely remove the microSD card and are confident that every relevant program has been closed, remove the drive anyway.
+
+### Setup and Boot Up the Raspberry Pi
+
+1. Insert the microSD card into the Raspberry Pi.
+1. Connect the Raspberry Pi to a monitor or TV using an HDMI cable.
+1. Connect a USB keyboard to the Raspberry Pi.
+1. Optionally, connect an Ethernet cable to the Raspberry Pi.
+1. Connect a power cable to the Raspberry Pi.
+After a few moments, it will power on. The Raspberry Pi will take a few minutes to complete its initialization process.
