@@ -50,14 +50,14 @@ Subject to the limitations noted in the cases section, the following computers a
 
 **Note:** If you are trying to set up RetroPie on a Ubuntu or Ubuntu Server system, please see [this guide](https://github.com/franklesniak/RetroPie-Setup-Ubuntu/tree/Support-Ubuntu-22dot04).
 
-### Supported "Technician Computer" Operating Systems
+### Supported "Technician's Computer" Operating Systems
 
-The "technician computer" is a computer different than the one that will be used to run emulation software.
+The "technician's computer" is a computer different than the one that will be used to run emulation software.
 It is used to bootstrap the overall setup process and it is where some configuration activities are performed.
 
 - Windows 11
 
-**Note:** Other technician computer operating systems will certainly work; however, this guide is not written for them.
+**Note:** Other technician's computer operating systems will certainly work; however, this guide is not written for them.
 
 ### Supported Locales
 
@@ -77,7 +77,7 @@ A microSD card is used to load Raspberry Pi OS Lite and update the firmware of y
 In this case, I recommend this SanDisk Ultra 1.5TB one: [SanDisk Ultra 1.5TB microSDXC UHS-I card with A1 Performance Rating - Affiliate Link](https://amzn.to/41JNZmH).
 Or, for a slightly faster microSD card, get one with an A2 performance rating and slightly less capacity like this Lexar 1TB one: [Lexar PLAY 1TB microSDXC UHS-I card with A2 Performance Rating - Affiliate Link](https://amzn.to/3vqAqwo).
 - Likewise, **a microSD card reader** is required. I recommend a USB 3.0 / USB 3.1 Gen 1 / USB 3.2 Gen 1x1 (or better) microSD reader like this inexpensive one from SanDisk: [SanDisk MobileMate USB 3.0 microSD Card Reader - Affiliate Link](https://amzn.to/48i3Ew3).
-  - **Note**: if the technician computer only has USB-C ports, you will need an adapter or a different microSD card reader.
+  - **Note**: if the technician's computer only has USB-C ports, you will need an adapter or a different microSD card reader.
 Here are some options:
     - USB A to C adapter: [Amazon Basics USB A (female) to USB-C (male) Adapter - Affiliate Link](https://amzn.to/41JMg11)
     - USB C microSD card reader: [Anker SD and microSD Card Reader, USB-C Connector - Affiliate Link](https://amzn.to/41LLKj4)
@@ -105,7 +105,7 @@ Use what you already have - but if you need to purchase one, I recommend one of 
   - 10 Ft.: [C2G Legrand CAT6a Ethernet Cable, Snagless Unshielded, Black, 10 Ft. - Affiliate Link](https://amzn.to/3NHPtrN)
   - Other sizes available at the above links)
 
-## Prepare the "Technician Computer"
+## Prepare the "Technician's Computer"
 
 Before beginning the RetroPie setup process, you will need to download and install some software.
 
@@ -166,10 +166,10 @@ These steps are **required on Raspberry Pi 4B-based builds that use SATA or NVMe
 
 ### Prepare the microSD Card with a Raspberry Pi OS Lite Image
 
-1. On the technician computer, extract the Raspberry Pi OS Lite `.img.xz` file:
+1. On the technician's computer, extract the Raspberry Pi OS Lite `.img.xz` file:
     - Right-click on the `.img.xz` file, then click `NanaZip` > `Extract to "[year]-[month]-[date]-raspios-[version]-[platform]-lite.img\"`.
 1. Use balenaEtcher to load the image file onto your microSD card
-    - Insert your microSD card into the technician computer and open balenaEtcher.
+    - Insert your microSD card into the technician's computer and open balenaEtcher.
     - In balenaEtcher, select `Flash from file`, then navigate to and select the image file you extracted.
 It should be in the `[year]-[month]-[date]-raspios-[version]-[platform]-lite.img` folder.
     - Click `Select target` then make sure the checkbox is checked next to your microSD card reader.
@@ -283,11 +283,11 @@ If, for some reason, you need to install a beta firmware instead of the latest s
 
 ### Enable SSH at the First Boot of the Raspberry Pi
 
-Secure Shell (SSH) is a remote access protocol that we will use to connect to the Raspberry Pi from the technician computer.
+Secure Shell (SSH) is a remote access protocol that we will use to connect to the Raspberry Pi from the technician's computer.
 
 1. If you haven't already done so, remove and reconnect the microSD card to the Windows computer.
 1. Create the SSH file:
-    - If it isn't already started, start Notepad++ on the technician computer.
+    - If it isn't already started, start Notepad++ on the technician's computer.
     - Click the icon to create a new file (or navigate to the `File` menu and click `New`).
     - Leave the file blank/empty.
 1. Save the file.
@@ -298,7 +298,7 @@ Secure Shell (SSH) is a remote access protocol that we will use to connect to th
       `ssh`
 
       and then click `Save`.
-1. "Eject" and then remove the microSD card from the technician computer.
+1. "Eject" and then remove the microSD card from the technician's computer.
     - In the _Notification Area_ or _System Tray_, find the icon for `Safely Remove Hardware and Eject Media`. `Right-click` on it, then click `Eject bootfs (E:)` - or a similarly named item related to the installed microSD card.
     - In a few moments, you should receive a `Safe to remove hardware` notification. Remove the microSD card.
     - If you do not receive the `Safe to remove hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the drive, then try again.
