@@ -239,3 +239,8 @@ Secure Shell (SSH) is a remote access protocol that we will use to connect to th
       `ssh`
 
       and then click `Save`.
+1. "Eject" and then remove the microSD card from the technician computer.
+    - In the _Notification Area_ or _System Tray_, find the icon for `Safely Remove Hardware and Eject Media`. `Right-click` on it, then click `Eject bootfs (E:)` - or a similarly named item related to the installed microSD card.
+    - In a few moments, you should receive a `Safe to remove hardware` notification. Remove the microSD card.
+    - If you do not receive the `Safe to remove hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the drive, then try again.
+    - If you still cannot safely remove the microSD card and are confident that every relevant program has been closed, remove the drive anyway.
