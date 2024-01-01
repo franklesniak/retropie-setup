@@ -298,6 +298,23 @@ For example, using the Argon ONE m.2 SATA Expansion Board would result in you de
 If you are building a RetroPie using the Argon ONE m.2 case, please install the m.2 SATA drive into the Argon ONE m.2 SATA Expansion Board by following the instructions supplied with the Expansion Board.
 Next, connect the Argon ONE m.2 SATA Expansion Board to the technician's computer by using a USB-A to USB-A cable.
 
+### Prepare the RetroPie Storage Device with the RetroPie Image
+
+1. On the technician's computer, extract the RetroPie `.img.gz` file:
+    - Right-click on the `.img.gz` file, then click `NanaZip` > `Extract to "retropie-[version]-[platform].img\"`.
+1. Use balenaEtcher to load the image file onto your microSD card
+    - Open balenaEtcher on the technician's computer.
+    - In balenaEtcher, select `Flash from file`, then navigate to and select the RetroPie image file you extracted.
+It should be in the `retropie-[version]-[platform].img` folder.
+    - Click `Select target` then make sure the checkbox is checked next to your microSD card reader.
+Click `Select 1`, then click `Flash!`.
+    - You may receive a warning that the drive you selected is `unusually large`.
+If you have a large storage device, this is expected.
+Click `Yes, I'm sure`.
+    - You may receive a User Account Control (UAC) prompt to provide balenaEtcher with the required permissions to flash the microSD card.
+Approve the prompt and/or enter credentials when needed.
+    - Close balenaEtcher when done.
+
 ## Graveyard
 
 ### Enable SSH at the First Boot of the Raspberry Pi
