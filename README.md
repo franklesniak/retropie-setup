@@ -153,3 +153,24 @@ RetroPie is the software package that includes the operating system, user interf
     - Raspberry Pi 4B and Compute Module 4 users should download the `Raspberry Pi 4/400` image.
     - Raspberry Pi 3B+ or 3B users should download the `Raspberry Pi 2/3/Zero 2 W` image.
     - Raspberry Pi Zero W users should download the `Raspberry Pi 1/Zero` image.
+
+## Update the Raspberry Pi's Firmware
+
+These steps are **required on Raspberry Pi 4B-based builds that use SATA or NVMe storage** (e.g., the Argon ONE m.2 case). They should be considered **optional for all other Raspberry Pi builds**.
+
+### Prepare the microSD Card with a Raspberry Pi OS Lite Image
+
+1. On the technician computer, extract the Raspberry Pi OS Lite `.img.xz` file:
+    - Right-click on the `.img.xz` file, then click `NanaZip` > `Extract to "[year]-[month]-[date]-raspios-[version]-[platform]-lite.img\"`.
+2. Use balenaEtcher to load the image file onto your microSD card
+    - Insert your microSD card into the technician computer and open balenaEtcher.
+    - In balenaEtcher, select `Flash from file`, then navigate to and select the image file you extracted.
+It should be in the `[year]-[month]-[date]-raspios-[version]-[platform]-lite.img` folder.
+    - Click `Select target` then make sure the checkbox is checked next to your microSD card reader.
+Click `Select 1`, then click `Flash!`.
+    - You may receive a warning that the drive you selected is `unusually large`.
+If you have a large storage device, this is expected.
+Click `Yes, I'm sure`.
+    - You may receive a User Account Control (UAC) prompt to provide balenaEtcher with the required permissions to flash the microSD card.
+Approve the prompt and/or enter credentials when needed.
+    - Close balenaEtcher when done.
