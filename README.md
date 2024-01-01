@@ -49,3 +49,13 @@ Subject to the limitations noted in the cases section, the following computers a
 - RetroPie 4.8
 
 **Note:** If you are trying to set up RetroPie on a Ubuntu or Ubuntu Server system, please see [this guide](https://github.com/franklesniak/RetroPie-Setup-Ubuntu/tree/Support-Ubuntu-22dot04).
+
+### Supported "Technician Computer" Operating Systems
+
+The "technician computer" is a computer different than the one that will be used to run emulation software.
+It is used to bootstrap the overall setup process and it is where some configuration activities are performed.
+
+- Windows 11
+
+**Note:** Other technician computer operating systems will certainly work; however, this guide is not written for them.
+
