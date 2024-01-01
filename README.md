@@ -221,3 +221,21 @@ These steps are only necessary if you intend to connect the Raspberry Pi to a Wi
 Keep Notepad++ open for the next step.
 
 **Note**: to read more about this process, see [this guide for preparing a microSD card for Wi-Fi](https://raspberrypi.stackexchange.com/a/57023/78201)
+
+### Enable SSH at the First Boot of the Raspberry Pi
+
+Secure Shell (SSH) is a remote access protocol that we will use to connect to the Raspberry Pi from the technician computer.
+
+1. If you haven't already done so, remove and reconnect the microSD card to the Windows computer.
+1. Create the SSH file:
+    - If it isn't already started, start Notepad++ on the technician computer.
+    - Click the icon to create a new file (or navigate to the `File` menu and click `New`).
+    - Leave the file blank/empty.
+1. Save the file.
+    - In the `Save As` dialog, box, change the `Save as type` to `All types`.
+    - Then, when prompted for a file name, with the microSD card still attached, navigate to the boot drive that appears in Computer (it may be labeled as `bootfs`).
+    - Enter the file name:
+
+      `ssh`
+
+      and then click `Save`.
