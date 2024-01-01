@@ -187,7 +187,7 @@ These steps are only necessary if you intend to connect the Raspberry Pi to a Wi
 
 **Note**: you must know your wireless SSID and password _exactly_ (including the correct capitalization) to complete these steps.
 
-1. Remove and reconnect the microSD card to the Windows computer.
+1. Remove the microSD card from the card reader, then reconnect it.
 1. Create the wireless settings file:
     - Open Notepad++
     - Click the icon to create a new file (or navigate to the `File` menu and click `New`).
@@ -314,6 +314,11 @@ Click `Yes, I'm sure`.
     - You may receive a User Account Control (UAC) prompt to provide balenaEtcher with the required permissions to flash the microSD card.
 Approve the prompt and/or enter credentials when needed.
     - Close balenaEtcher when done.
+
+### Disconnect and Reconnect the RetroPie Storage Device; Start Notepad++
+
+1. Remove the RetroPie storage device from the technician's computer, then reconnect it.
+1. If it isn't already open, start Notepad++.
 
 ## Graveyard
 
