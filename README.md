@@ -59,6 +59,12 @@ It is used to bootstrap the overall setup process and it is where some configura
 
 **Note:** Other technician computer operating systems will certainly work; however, this guide is not written for them.
 
+### Supported Locales
+
+The author is based in the United States of America, speaks English (US) and uses an English (US) keyboard layout, and is in the Central US time zone.
+Accordingly, the products listed and the instructions in this repository will be US and English-centric.
+However, it is possible to complete these steps using alternative languages, locales, etc.
+
 ## Required Hardware Accessories/Tools
 
 In addition to the core bill of materials, you will need some additional hardware to support your RetroPie build.
@@ -253,3 +259,19 @@ Secure Shell (SSH) is a remote access protocol that we will use to connect to th
 1. Optionally, connect an Ethernet cable to the Raspberry Pi.
 1. Connect a power cable to the Raspberry Pi.
 After a few moments, it will power on. The Raspberry Pi will take a few minutes to complete its initialization process.
+
+### Complete the Initial Operating System Configuration
+
+1. After a few minutes, you will be prompted to select a keyboard layout.
+    - Use the down arrow key to select `Other`, then press **Enter**.
+    - Use the down arrow key to select `English (US)`, then press **Enter**.
+    - Use the up arrow key to select `English (US)` again, then press **Enter**.
+2. Create a set of credentials
+    - When prompted to enter a new username, enter one (e.g., enter `flesniak`), then press **Enter**.
+    - When prompted, enter a password, then press **Enter**.
+    - Enter the password again, then press **Enter**.
+3. Login to the Raspberry Pi
+    - After a few seconds, a `raspberrypi login` prompt will appear.
+Enter your username, then press **Enter**.
+    - Enter your password, then press **Enter**.
+
