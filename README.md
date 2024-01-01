@@ -277,7 +277,9 @@ If, for some reason, you need to install a beta firmware instead of the latest s
 
     `sudo shutdown now`
 
-1. When the Raspberry Pi completes its shutdown, remove the power cable, and then remove the microSD card.
+### Disconnect the Power and the microSD Card
+
+When the Raspberry Pi completes its shutdown, remove the power cable, and then remove the microSD card.
 
 ## Graveyard
 
