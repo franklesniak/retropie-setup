@@ -87,7 +87,7 @@ If you need to purchase one, it's nothing fancy, but I like this simple, compact
 - A **precision screwdriver** is required for assembly. If you can find it, I really like this electrostatic discharge-resistant one from Wiha: [Wihi 27324 Phillips Screwdriver with Precision ESD-Safe Dissipative Handle](https://amzn.to/48xjNgS).
 - For **Raspberry Pi 4B builds**, a **micro HDMI to full-size HDMI adapter** is needed.
 This one from Monoprice works great: [Monoprice Micro HDMI (Male) to Full-Size HDMI (Female) Adapter Cable - Affiliate Link](https://amzn.to/4aDzpkR).
-- For builds involving the **Argon One m.2 SATA Expansion Board**, a **USB-A to USB-A cable** is needed.
+- For builds involving the **Argon ONE m.2 SATA Expansion Board**, a **USB-A to USB-A cable** is needed.
 I have this one, and it's working great for me so far: [AINOPE USB 3.0 A (Male) to USB 3.0 A (Male) Cable, 6.6 Ft. - Affiliate Link](https://amzn.to/3S4CumV).
 - For **all builds except handhelds**, a HDMI cable is required.
 If you have one, use what you have.
@@ -280,6 +280,23 @@ If, for some reason, you need to install a beta firmware instead of the latest s
 ### Disconnect the Power and the microSD Card
 
 When the Raspberry Pi completes its shutdown, remove the power cable, and then remove the microSD card.
+
+## Copy RetroPie to Its Storage Device and Configure It
+
+### Connect the RetroPie Storage Device to the Technician's Computer
+
+By default, Raspberry Pis boot from microSD.
+However, Raspberry Pi 2B v1.2, Raspberry Pi 3B, 3B+, 3A+, and Raspberry Pi 4B support boot from USB.
+
+The Raspberry Pi 4B supports USB 3.0 / USB 3.1 Gen 1 / USB 3.2 Gen 1x1, making USB-attached storage notably more performant and capacious compared to microSD card options.
+
+In any case, the choice of RetroPie storage device referenced in this section will depend on the selected case.
+For example, using the Argon ONE m.2 SATA Expansion Board would result in you deciding to boot from USB using the m.2 SATA Expansion Board as the USB device.
+
+#### Argon ONE m.2 case
+
+If you are building a RetroPie using the Argon ONE m.2 case, please install the m.2 SATA drive into the Argon ONE m.2 SATA Expansion Board by following the instructions supplied with the Expansion Board.
+Next, connect the Argon ONE m.2 SATA Expansion Board to the technician's computer by using a USB-A to USB-A cable.
 
 ## Graveyard
 
