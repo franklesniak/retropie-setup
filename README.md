@@ -102,9 +102,9 @@ Before beginning the RetroPie setup process, you will need to download and insta
 1. Download and install **balenaEtcher**.
 This software is used to write the Raspberry Pi OS or RetroPie image to a microSD card.
 
-  Link: [balenaEtcher](https://etcher.io/)
+    Link: [balenaEtcher](https://etcher.io/)
 
-  **Note**: this software installs to your user profile, so you should **not** right-click and run it as administrator (i.e., do not run setup elevated)
+    **Note**: this software installs to your user profile, so you should **not** right-click and run it as administrator (i.e., do not run setup elevated)
 
 1. Confirm your system has **OpenSSH** installed.
 If it doesn't, install it. This software is used to remote into the Raspberry Pi system once it is online.
@@ -147,4 +147,3 @@ RetroPie is the software package that includes the operating system, user interf
     - Raspberry Pi 4B and Compute Module 4 users should download the `Raspberry Pi 4/400` image.
     - Raspberry Pi 3B+ or 3B users should download the `Raspberry Pi 2/3/Zero 2 W` image.
     - Raspberry Pi Zero W users should download the `Raspberry Pi 1/Zero` image.
-
