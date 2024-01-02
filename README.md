@@ -816,9 +816,11 @@ Repeat the steps noted earlier to connect to the RetroPie from the technician's 
 
 1. If you overclocked the Raspberry Pi, monitor the process to ensure the Raspberry Pi doesn't hang or otherwise appear unstable.
 If instability is observed, return to the `Overclock the Raspberry Pi` section to address it.
-    - Once you have adjusted the clock speeds, run the following command to repair whatever installation was last running:
+    - Once you have adjusted the clock speeds and believe you have addressed the stability issue, run the following command to repair whatever installation was last running:
 
       `sudo dpkg --configure -a`
+
+    - Once the repair is complete, re-run the commands to update the operating system's packages.
 
 1. Reboot the RetroPie by typing the following at the terminal prompt:
 
@@ -826,7 +828,19 @@ If instability is observed, return to the `Overclock the Raspberry Pi` section t
 
     (then press **Enter**).
 1. The RetroPie system will reboot.
-When it completes, you will arrive at a familiar EmulationStation screen.
+    - If the RetroPie system prompts for console login at boot instead of automatically logging in and launching EmulationStation, perform these steps:
+      - Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH
+      - At the terminal prompt, type:
+
+        `sudo raspi-config`
+
+        (then, press **Enter**).
+      - In `Raspi-Config`, use the keyboard's arrow keys to select option `1` (`System Options`), then press **Enter**.
+      - Next, use the keyboard's arrow keys to select option `S5` (`Boot / Auto Login`), then press **Enter**.
+      - Use the keyboard's arrow keys to select option `B2` (`Console Autologin`), then press **Enter**.
+      - Use the left/right arrow keys to select `Finish`, then press **Enter**.
+Press **Enter** again to confirm that we would like to reboot now.
+1. When the reboot completes, you will arrive at a familiar EmulationStation screen.
 Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
 1. At the terminal prompt, update the operating system's packages one more time by typing the following commands:
 
@@ -853,6 +867,13 @@ Repeat the steps noted earlier to connect to the RetroPie from the technician's 
 
     ```
 
+1. If you overclocked the Raspberry Pi, monitor the process to ensure the Raspberry Pi doesn't hang or otherwise appear unstable.
+If instability is observed, return to the `Overclock the Raspberry Pi` section to address it.
+    - Once you have adjusted the clock speeds and believe you have addressed the stability issue, run the following command to repair whatever installation was last running:
+
+      `sudo dpkg --configure -a`
+
+    - Then, re-run the commands to initiate the RetroPie update process.
 1. Reboot the RetroPie by typing the following at the terminal prompt:
 
     `sudo reboot`
