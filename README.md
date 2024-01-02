@@ -231,9 +231,9 @@ Keep Notepad++ open for the next step.
 ### "Eject" and Then Remove the microSD card from the Technician's Computer
 
 1. In the _Notification Area_ or _System Tray_, find the icon for `Safely Remove Hardware and Eject Media`. `Right-click` on it, then click `Eject bootfs (E:)` - or a similarly named item related to the installed microSD card.
-2. In a few moments, you should receive a `Safe to remove hardware` notification. Remove the microSD card.
-3. If you do not receive the `Safe to remove hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the drive, then try again.
-4. If you still cannot safely remove the microSD card and are confident that every relevant program has been closed, remove the drive anyway.
+1. In a few moments, you should receive a `Safe to Remove Hardware` notification. Remove the microSD card.
+1. If you do not receive the `Safe to remove hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the drive, then try again.
+1. If you still cannot safely remove the microSD card and are confident that every relevant program has been closed, remove the drive anyway.
 
 ### Setup and Boot Up the Raspberry Pi
 
@@ -426,3 +426,10 @@ Secure Shell (SSH) is a remote access protocol that we will use to connect to th
       `ssh`
 
       and then click `Save`.
+
+### "Eject" and Then Remove the RetroPie Storage Device from the Technician's Computer
+
+1. In the _Notification Area_ or _System Tray_, find the icon for `Safely Remove Hardware and Eject Media`. `Right-click` on it, then click `Eject boot (G:)` - or a similarly named item related to the connected storage device.
+1. In a few moments, you should receive a `Safe to Remove Hardware` notification. Disconnect the RetroPie storage device.
+1. If you do not receive the `Safe to Remove Hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the storage device, then try again.
+1. If you still cannot safely remove the RetroPie storage device and are confident that every relevant program has been closed, disconnect the drive anyway.
