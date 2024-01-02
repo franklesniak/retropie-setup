@@ -516,3 +516,30 @@ If you are using a wired Ethernet connection, your RetroPie's IP address will be
 If you are using wireless (Wi-Fi), your RetroPie's IP address will be listed next to the `inet` keyword beneath `wlan0`.
 
 Take note of the IP address, as you will need it for the next step.
+
+## Connect to the RetroPie using SSH
+
+1. On the technician's computer, open a Command Prompt:
+    - Click `Start`, then type:
+
+      `cmd`
+
+    `Command Prompt` will appear in the search results. Press **Enter** to start it.
+2. At the Command Prompt, type:
+
+      `ssh 10.1.2.120 -l pi`
+
+    (replace 10.1.2.120 with the IP address noted previously).
+Press **Enter**.
+3. You should receive a prompt like the following:
+
+      ```text
+      The authenticity of host '10.1.2.51 (10.1.2.51)' can't be established.
+      ED25519 key fingerprint is SHA256:3sD13XzoMsfqnf2GiGwM5LOpEm7VkZAobdb0qQDQl+g.
+      This key is not known by any other names
+      Are you sure you want to continue connecting (yes/no/[fingerprint])?
+      ```
+
+    In response to this prompt, type `yes` and then press **Enter**.
+4. Enter the following password: `raspberry` (then press **Enter**).
+5. The connection to the RetroPie will be established.
