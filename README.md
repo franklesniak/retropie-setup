@@ -359,6 +359,52 @@ If it is, in the Command Prompt, type:
 
       `exit`
 
+### Perform Initial Wireless Configuration on RetroPie
+
+These steps are only necessary if you intend to connect the RetroPie to a Wi-Fi connection instead of a wired (Ethernet) connection.
+
+**Note**: you must know your wireless SSID and password _exactly_ (including the correct capitalization) to complete these steps.
+
+1. Create the wireless settings file:
+    - Open Notepad++
+    - Click the icon to create a new file (or navigate to the `File` menu and click `New`).
+    - Click on the `Edit` menu, then click `EOL Conversion` > `Unix (LF)`
+    - Paste in template WiFi settings:
+
+        ```text
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+        update_config=1
+        country=US
+
+        network={
+        scan_ssid=1
+        ssid="MyNetworkSSID"
+        psk="WiFiPasswordHere"
+        key_mgmt=WPA-PSK
+        identity="home"
+        }
+
+        ```
+
+    - Replace `MyNetworkSSID` with the name of your wireless network's SSID.
+    - Replace `WiFiPasswordHere` with the pre-shared key of your wireless network.
+    - **Note**: for other types of wireless networks, review the reference material [here](https://w1.fi/cgit/hostap/plain/wpa_supplicant/wpa_supplicant.conf).
+1. If you want to configure one or more additional wireless networks:
+    - Add another `network={}` section by copying and pasting the template above, and then updating the values for the SSID and wireless password as noted previously.
+    - Make sure that the identity text for each wireless network is unique (e.g., "home", "work", etc.).
+1. Save the file.
+    - In the `Save As` dialog, box, change the `Save as type` to `All types`.
+    - Then, when prompted for a file name, with the storage device still attached, navigate to the boot drive that appears in Computer (it will be labeled as `boot`).
+    - Enter the file name:
+
+      `wpa_supplicant.conf`
+
+      and then click `Save`.
+
+Keep Notepad++ open for the next step.
+
+**Note**: to read more about this process, see [this guide for preparing a Raspberry Pi for Wi-Fi](https://raspberrypi.stackexchange.com/a/57023/78201).
+
 ## Graveyard
 
 ### Enable SSH at the First Boot of the Raspberry Pi
