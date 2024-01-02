@@ -84,11 +84,13 @@ Here are some options:
     - USB A and C microSD card reader (supports both!): [Anker SD and microSD Card Reader, USB-A and USB-C Connectors - Affiliate Link](https://amzn.to/3H40SyD)
 - A **USB keyboard and mouse** are required.
 If you need to purchase one, it's nothing fancy, but I like this simple, compact, all-in-one unit from Logitech: [Logitech K400 Plus Wireless Keyboard with Touchpad Mouse](https://www.amazon.com/Logitech-Wireless-Keyboard-Touchpad-PC-connected/dp/B014EUQOGK)
-- A **precision screwdriver** is required for assembly. If you can find it, I really like this electrostatic discharge-resistant one from Wiha: [Wihi 27324 Phillips Screwdriver with Precision ESD-Safe Dissipative Handle](https://amzn.to/48xjNgS).
+- A **precision screwdriver** is required for assembly. If you can find it, I like this electrostatic discharge-resistant one from Wiha: [Wihi 27324 Phillips Screwdriver with Precision ESD-Safe Dissipative Handle - Affiliate Link](https://amzn.to/48xjNgS).
 - For **Raspberry Pi 4B builds**, a **micro HDMI to full-size HDMI adapter** is needed.
 This one from Monoprice works great: [Monoprice Micro HDMI (Male) to Full-Size HDMI (Female) Adapter Cable - Affiliate Link](https://amzn.to/4aDzpkR).
 - For builds involving the **Argon ONE m.2 SATA Expansion Board**, a **USB-A to USB-A cable** is needed.
 I have this one, and it's working great for me so far: [AINOPE USB 3.0 A (Male) to USB 3.0 A (Male) Cable, 6.6 Ft. - Affiliate Link](https://amzn.to/3S4CumV).
+- For builds involving the **Argon ONE m.2 SATA Expansion Board**, a 5mm hex nut driver may be required.
+If you can find it, I like this electrostatic discharge-resistant one from Wiha: [Wiha 27787 5.0mm Hex Nut Driver with Precision ESD-Safe Dissipative Handle - Affiliate Link](https://amzn.to/3S31877).
 - For **all builds except handhelds**, a HDMI cable is required.
 If you have one, use what you have.
 If you need one, I recommend one of the following:
