@@ -478,3 +478,41 @@ Here are some case-specific notes:
 - Connect a USB keyboard and the TV or computer monitor (via HDMI).
 - Optionally, connect a wired Ethernet cable.
 - Attach the power adapter, then press the power button on the rear of the unit (above the Ethernet port).
+
+## Complete the First Boot and Connect to the RetroPie Using SSH
+
+Now that you have powered on the RetroPie, it will complete its initialization and reboot several times.
+When you arrive at a screen that says, `Welcome` and `Hold a button on your device to configure it.`, the initialization process is complete.
+
+### Handhelds Only: Complete Controller Setup
+
+This is a placeholder.
+
+### Get the IP Address of the Raspberry Pi
+
+The procedure for obtaining the Raspberry Pi's IP address varies depending on whether your RetroPie is installed in a handheld case.
+
+#### Handhelds Only: Use the RetroPie Menu to Get the IP Address
+
+- Using the D-pad on the controller, select RetroPie Configuration, then press A (rightmost button).
+- Use the D-pad to scroll down to Show IP, then press A.
+- After about 15-45 seconds, the IP address information will display.
+- The IP address is noted as the very first line in the gray box (for example:
+`Your IP is: 10.1.2.120`).
+- Make note of the IP address; you will need it in subsequent steps.
+- Press A.
+
+#### All Other Systems: Use the Keyboard to Get the IP Address
+
+On the USB keyboard attached to the RetroPie, press **F4**.
+EmulationStation (the graphical interface) should quit, leaving you at a terminal prompt.
+
+At the terminal prompt, type:
+
+`ip addr show`
+
+If you are using a wired Ethernet connection, your RetroPie's IP address will be listed next to the `inet` keyword beneath `eth0`.
+
+If you are using wireless (Wi-Fi), your RetroPie's IP address will be listed next to the `inet` keyword beneath `wlan0`.
+
+Take note of the IP address, as you will need it for the next step.
