@@ -228,6 +228,13 @@ Keep Notepad++ open for the next step.
 
 **Note**: to read more about this process, see [this guide for preparing a microSD card for Wi-Fi](https://raspberrypi.stackexchange.com/a/57023/78201).
 
+### "Eject" and Then Remove the microSD card from the Technician's Computer
+
+1. In the _Notification Area_ or _System Tray_, find the icon for `Safely Remove Hardware and Eject Media`. `Right-click` on it, then click `Eject bootfs (E:)` - or a similarly named item related to the installed microSD card.
+2. In a few moments, you should receive a `Safe to remove hardware` notification. Remove the microSD card.
+3. If you do not receive the `Safe to remove hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the drive, then try again.
+4. If you still cannot safely remove the microSD card and are confident that every relevant program has been closed, remove the drive anyway.
+
 ### Setup and Boot Up the Raspberry Pi
 
 1. Insert the microSD card into the Raspberry Pi.
@@ -366,8 +373,7 @@ These steps are only necessary if you intend to connect the RetroPie to a Wi-Fi 
 **Note**: you must know your wireless SSID and password _exactly_ (including the correct capitalization) to complete these steps.
 
 1. Create the wireless settings file:
-    - Open Notepad++
-    - Click the icon to create a new file (or navigate to the `File` menu and click `New`).
+    - In Notepad++, click the icon to create a new file (or navigate to the `File` menu and click `New`).
     - Click on the `Edit` menu, then click `EOL Conversion` > `Unix (LF)`
     - Paste in template WiFi settings:
 
@@ -405,16 +411,12 @@ Keep Notepad++ open for the next step.
 
 **Note**: to read more about this process, see [this guide for preparing a Raspberry Pi for Wi-Fi](https://raspberrypi.stackexchange.com/a/57023/78201).
 
-## Graveyard
-
 ### Enable SSH at the First Boot of the Raspberry Pi
 
 Secure Shell (SSH) is a remote access protocol that we will use to connect to the Raspberry Pi from the technician's computer.
 
-1. If you haven't already done so, remove and reconnect the microSD card to the Windows computer.
 1. Create the SSH file:
-    - If it isn't already started, start Notepad++ on the technician's computer.
-    - Click the icon to create a new file (or navigate to the `File` menu and click `New`).
+    - In Notepad++, click the icon to create a new file (or navigate to the `File` menu and click `New`).
     - Leave the file blank/empty.
 1. Save the file.
     - In the `Save As` dialog, box, change the `Save as type` to `All types`.
