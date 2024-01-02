@@ -545,3 +545,24 @@ Press **Enter**.
 1. The connection to the RetroPie will be established.
 Effectively, this Command Prompt on the technician's computer is equivalent to the terminal prompt on the RetroPie.
 The term "terminal prompt" will now be used interchangeably to mean either the SSH prompt on the technician's computer or the prompt on the RetroPie.
+
+## Configure and Update the RetroPie System
+
+### Set the Keyboard Layout to English (US)
+
+1. At the terminal prompt, type:
+
+    `sudo editor /etc/default/keyboard`
+
+    (then press **Enter**)
+
+1. Use the keyboard's arrow keys to navigate to the line that reads:
+
+    `XKBLAYOUT="gb"`
+
+    Modify this line so that it reads:
+
+    `XKBLAYOUT="us"`
+
+1. Press **Ctrl** and **O** simultaneously to save the file, then press **Enter** to confirm the file name.
+1. Press **Ctrl** and **X** simultaneously to exit Editor.
