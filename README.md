@@ -566,3 +566,17 @@ The term "terminal prompt" will now be used interchangeably to mean either the S
 
 1. Press **Ctrl** and **O** simultaneously to save the file, then press **Enter** to confirm the file name.
 1. Press **Ctrl** and **X** simultaneously to exit Editor.
+
+### Set the Time Zone
+
+1. At the terminal prompt, type:
+
+    `sudo raspi-config`
+
+    (then press **Enter**).
+The `Raspberry Pi Software Configuration Tool (raspi-config)` starts.
+1. Use the keyboard's arrow keys to select option `5` (`Localisation Options`), then press **Enter**.
+1. Use the keyboard's arrow keys to select option `L2` (`Configure time zone`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `US`, then press **Enter**.
+1. Use the keyboard's arrow keys to select your US time zone, then press **Enter**.
+1. Keep `Raspi-Config` open, as it will be used in the next step.
