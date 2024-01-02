@@ -684,3 +684,45 @@ When completed, use the keyboard's left-right arrow keys to select `Finish`, the
 1. The RetroPie system will reboot.
 When it completes, you will arrive at a familiar EmulationStation screen.
 Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
+
+### Configure Case-Specific Software Components
+
+The procedure here varies depending on which case you are using for your RetroPie build:
+
+#### Argon ONE Software Configuration
+
+1. At the terminal prompt, type:
+
+    `wget -O get_argononed.sh https://gitlab.com/DarkElvenAngel/argononed/-/raw/master/get_argononed.sh`
+
+    (the above is all one line - once entered, press **Enter**).
+1. At the terminal prompt, type:
+
+    `sudo bash get_argononed.sh`
+
+    (then press **Enter**).
+1. Press **1** and then **Enter** to `Install Stable version`.
+1. When you see `Complete`, press **Enter** a couple of times to clear the buffer.
+1. Reboot the RetroPie by typing the following at the terminal prompt:
+
+    `sudo reboot`
+
+    (then press **Enter**).
+1. The RetroPie system will reboot.
+When it completes, you will arrive at a familiar EmulationStation screen.
+1. Wait approximately one additional minute.
+1. Test "graceful reboot" by pressing the power button twice.
+1. The RetroPie system will reboot.
+When it completes, you will arrive at a familiar EmulationStation screen.
+1. Wait approximately one additional minute.
+1. Test "soft shutdown" by pressing and holding down the power button for just over three seconds (but not five seconds or more).
+1. The RetroPie system will shut down and then power off.
+Press the power button to turn it back on.
+1. When the RetroPie boots up, you will arrive at a familiar EmulationStation screen.
+1. Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
+1. Once reconnected, type the following command:
+
+    `sudo argonone-cli --decode`
+
+    (then press **Enter**).
+Verify that the output indicates a current temperature and no obvious errors.
