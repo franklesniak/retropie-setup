@@ -607,3 +607,44 @@ Press **Enter** again to confirm that we would like to reboot now.
 The RetroPie system will reboot.
 When it completes, you will arrive at a familiar EmulationStation screen.
 Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH -- except this time, you should not receive a confirmation prompt about the SSH key, and you will need to use the updated password that you just set.
+
+### Encrypt the Wireless Password(s)
+
+If you are using a Wi-Fi connection for the RetroPie, the wireless passwords defined earlier are stored in plain text -- this is not a good security practice.
+Therefore, we will follow these steps to encrypt the password.
+
+1. At the terminal prompt, type:
+
+    `wpa_passphrase WirelessSSID`
+
+    (replace `WirelessSSID` with the actual SSID of your wireless network, including the correct capitalization, then press **Enter**)
+1. Enter the pre-shared key (wireless password), then press **Enter**
+1. The command returns an encrypted psk.
+Use the mouse to highlight the encrypted key (which looks like a long series of numbers and letters).
+Once highlighted, press **Enter** to copy it to the clipboard.
+1. On the technician's computer, open Notepad/Notepad++ and paste the text to store it temporarily.
+    - **Note**: if you have multiple wireless networks configured, repeat the above steps for each wireless network
+1. At the terminal prompt, type:
+
+    `sudo editor /etc/wpa_supplicant/wpa_supplicant.conf`
+
+1. Use the keyboard's arrow keys to navigate to the line that looks like:
+
+    `psk="WiFiPasswordHere"`
+
+1. Replace the existing psk line with a new one like:
+
+    `psk=1234567890abcdef1234567890abcdef`
+
+    (right click to paste the text from the clipboard, and be sure to remove the quotation marks)
+    - **Note**: If you have multiple wireless networks configured, replace the PSK for the remaining wireless networks with the respective encrypted key.
+1. Press **Ctrl** and **O** simultaneously to save the file, then press **Enter** to confirm the file name.
+1. Press **Ctrl** and **X** simultaneously to exit Editor.
+1. Reboot the RetroPie by typing the following at the terminal prompt:
+
+    `sudo reboot`
+
+    (then press **Enter**).
+1. The RetroPie system will reboot.
+When it completes, you will arrive at a familiar EmulationStation screen.
+Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
