@@ -580,3 +580,13 @@ The `Raspberry Pi Software Configuration Tool (raspi-config)` starts.
 1. Use the keyboard's arrow keys to select `US`, then press **Enter**.
 1. Use the keyboard's arrow keys to select your US time zone, then press **Enter**.
 1. Keep `Raspi-Config` open, as it will be used in the next step.
+
+### Change the RetroPie's Hostname
+
+1. In `Raspi-Config`, use the keyboard's arrow keys to select option `1` (`System Options`), then press **Enter**.
+1. Use the keyboard's arrow keys to select option `S4` (`Hostname`), then press **Enter**.
+1. Press **Enter** to acknowledge the warning.
+1. Use the **Backspace** key to clear the current hostname.
+Replace it with a new one, keeping the new one 15 characters or less.
+Press **Enter** when done.
+1. Keep `Raspi-Config` open, as it will be used in the next step.
