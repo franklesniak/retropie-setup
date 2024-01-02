@@ -658,3 +658,29 @@ Repeat the steps noted earlier to connect to the RetroPie from the technician's 
     (then press **Enter**).
 1. Next, when prompted for `New SMB password`, type the same password entered previously and press **Enter** when done.
 1. When prompted to `Retype new SMB password`, type the password again and press **Enter** when done.
+
+### Set the Locale to English (US)
+
+1. At the terminal prompt, type:
+
+    `sudo raspi-config`
+
+    (then press **Enter**).
+1. Use the keyboard's arrow keys to select option `5` (`Localisation Options`), then press **Enter**.
+1. Keep option `L1` (`Locale`) selected, then press **Enter**.
+1. Use the keyboard's arrow keys and/or the **Page Up** and **Page Down** keys to scroll down to `en_GB.UTF-8 UTF-8`.
+Press **Space** to unselect `en_GB.UTF.8 UTF-8`.
+1. Use the keyboard's arrow keys and/or the **Page Up** and **Page Down** keys to scroll down to `en_US.UTF-8 UTF-8`.
+Press **Space** to select `en_US.UTF.8 UTF-8`.
+1. Press **Enter**.
+1. On the next screen, select `en_US.UTF-8` and press **Enter**.
+1. Wait for locale generation to complete.
+When completed, use the keyboard's left-right arrow keys to select `Finish`, then press **Enter**.
+1. Reboot the RetroPie by typing the following at the terminal prompt:
+
+    `sudo reboot`
+
+    (then press **Enter**).
+1. The RetroPie system will reboot.
+When it completes, you will arrive at a familiar EmulationStation screen.
+Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
