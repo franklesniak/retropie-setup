@@ -525,13 +525,13 @@ Take note of the IP address, as you will need it for the next step.
       `cmd`
 
     `Command Prompt` will appear in the search results. Press **Enter** to start it.
-2. At the Command Prompt, type:
+1. At the Command Prompt, type:
 
       `ssh 10.1.2.120 -l pi`
 
     (replace 10.1.2.120 with the IP address noted previously).
 Press **Enter**.
-3. You should receive a prompt like the following:
+1. You should receive a prompt like the following:
 
       ```text
       The authenticity of host '10.1.2.51 (10.1.2.51)' can't be established.
@@ -541,5 +541,7 @@ Press **Enter**.
       ```
 
     In response to this prompt, type `yes` and then press **Enter**.
-4. Enter the following password: `raspberry` (then press **Enter**).
-5. The connection to the RetroPie will be established.
+1. Enter the following password: `raspberry` (then press **Enter**).
+1. The connection to the RetroPie will be established.
+Effectively, this Command Prompt on the technician's computer is equivalent to the terminal prompt on the RetroPie.
+The term "terminal prompt" will now be used interchangeably to mean either the SSH prompt on the technician's computer or the prompt on the RetroPie.
