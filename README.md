@@ -517,7 +517,7 @@ If you are using wireless (Wi-Fi), your RetroPie's IP address will be listed nex
 
 Take note of the IP address, as you will need it for the next step.
 
-## Connect to the RetroPie using SSH
+### Connect to the RetroPie using SSH
 
 1. On the technician's computer, open a Command Prompt:
     - Click `Start`, then type:
