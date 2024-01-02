@@ -300,7 +300,7 @@ The Raspberry Pi 4B supports USB 3.0 / USB 3.1 Gen 1 / USB 3.2 Gen 1x1, making U
 In any case, the choice of RetroPie storage device referenced in this section will depend on the selected case.
 For example, using the Argon ONE m.2 SATA Expansion Board would result in you deciding to boot from USB using the m.2 SATA Expansion Board as the USB device.
 
-#### Argon ONE m.2 case
+#### Argon ONE m.2 Case Storage Device Setup
 
 If you are building a RetroPie using the Argon ONE m.2 case, please install the m.2 SATA drive into the Argon ONE m.2 SATA Expansion Board by following the instructions supplied with the Expansion Board.
 Next, connect the Argon ONE m.2 SATA Expansion Board to the technician's computer by using a USB-A to USB-A cable.
@@ -433,3 +433,48 @@ Secure Shell (SSH) is a remote access protocol that we will use to connect to th
 1. In a few moments, you should receive a `Safe to Remove Hardware` notification. Disconnect the RetroPie storage device.
 1. If you do not receive the `Safe to Remove Hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the storage device, then try again.
 1. If you still cannot safely remove the RetroPie storage device and are confident that every relevant program has been closed, disconnect the drive anyway.
+
+## Install the Raspberry Pi Into Its Case and Set it Up
+
+### Raspberry Pi Case Installation
+
+The procedure here varies based on the type of case that you are using - but, generally, you should follow the manufacturer's instructions.
+
+Here are a few case-specific notes:
+
+#### Argon ONE m.2 Case Assembly
+
+- Keep the Power Button Management Mode jumper set to pins 1-2, the default setting (also known as mode 1).
+- Instead of using the plain, plastic case bottom, attach the Argon ONE m.2 SATA Expansion Board to the bottom of the case.
+- Don't worry about the Argon ONE Pi 4 v2 Power Button and Fan Control software - we will address this a little later
+
+### Install Controller Firmware Updates
+
+#### Xbox Controller Firmware Update
+
+The easiest way to do this is to use your Xbox.
+
+If you don't have an Xbox or don't want to use it, follow these steps:
+
+1. On the technician's computer, open the Microsoft Store.
+Then, install the [Xbox Accessories app](https://apps.microsoft.com/detail/9NBLGGH30XJ3?rtc=1&hl=en-us&gl=US).
+
+2. Update the controller firmware.
+    - Launch the Xbox Accessories app
+    - Plug in the Xbox controller to the technician's computer via USB.
+    - The app should tell you if a firmware update is available - press the `...` button to be sure.
+    - Repeat for any other Xbox controllers.
+
+### Connect the Storage Device, Display, and Peripherals and Turn on the RetroPie
+
+As the header indicates, this is the step where you connect the required cables.
+Optionally, you could also connect a wired Ethernet cable.
+
+Here are some case-specific notes:
+
+#### Argon ONE m.2 Cabling and Power-On
+
+- Use the USB A-USB-A bridge to attach the Argon ONE m.2 SATA Expansion Board to the Raspberry Pi
+- Connect a USB keyboard and the TV or computer monitor (via HDMI).
+- Optionally, connect a wired Ethernet cable.
+- Attach the power adapter, then press the power button on the rear of the unit (above the Ethernet port).
