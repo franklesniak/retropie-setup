@@ -802,3 +802,62 @@ Disconnect the RetroPie storage device.
       - Monitor its boot and repeat if necessary.
 1. When the Raspberry Pi completes its boot, you will arrive at a familiar EmulationStation screen.
 Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
+
+### Update RetroPie
+
+1. At the terminal prompt, update the operating system's packages by typing the following commands:
+
+    ```bash
+    sudo apt update
+    sleep 2
+    sudo apt -y dist-upgrade
+
+    ```
+
+1. If you overclocked the Raspberry Pi, monitor the process to ensure the Raspberry Pi doesn't hang or otherwise appear unstable.
+If instability is observed, return to the `Overclock the Raspberry Pi` section to address it.
+    - Once you have adjusted the clock speeds, run the following command to repair whatever installation was last running:
+
+      `sudo dpkg --configure -a`
+
+1. Reboot the RetroPie by typing the following at the terminal prompt:
+
+    `sudo reboot`
+
+    (then press **Enter**).
+1. The RetroPie system will reboot.
+When it completes, you will arrive at a familiar EmulationStation screen.
+Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
+1. At the terminal prompt, update the operating system's packages one more time by typing the following commands:
+
+    ```bash
+    sudo apt update
+    sleep 2
+    sudo apt -y dist-upgrade
+
+    ```
+
+1. At the terminal prompt, type the following commands to update the RetroPie setup script:
+
+    ```bash
+    cd ~/RetroPie-Setup/
+    git pull
+
+    ```
+
+1. At the terminal prompt, type the following commands to initiate the RetroPie update process:
+
+    ```bash
+    sudo __nodialog=1 ./retropie_packages.sh setup post_update
+    sudo __nodialog=1 ./retropie_packages.sh setup update_packages
+
+    ```
+
+1. Reboot the RetroPie by typing the following at the terminal prompt:
+
+    `sudo reboot`
+
+    (then press **Enter**).
+1. The RetroPie system will reboot.
+When it completes, you will arrive at a familiar EmulationStation screen.
+Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
