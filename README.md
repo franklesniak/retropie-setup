@@ -590,3 +590,20 @@ The `Raspberry Pi Software Configuration Tool (raspi-config)` starts.
 Replace it with a new one, keeping the new one 15 characters or less.
 Press **Enter** when done.
 1. Keep `Raspi-Config` open, as it will be used in the next step.
+
+### Change the Default Password and Reboot
+
+1. In `Raspi-Config`, use the keyboard's arrow keys to select option `1` (`System Options`), then press **Enter**.
+1. Use the keyboard's arrow keys to select option `S3` (`Password`), then press **Enter**.
+1. Press **Enter** to confirm.
+1. At the `New password:` prompt, type the password that you would like to use, then press **Enter**.
+1. At the `Retype new password:` prompt, type the password one more time, then press **Enter**.
+1. Press **Enter** to acknowledge that the password was changed successfully.
+1. Use the keyboard's left-right arrow keys to select `Finish`, then press **Enter**.
+Press **Enter** again to confirm that we would like to reboot now.
+
+### Wait a Bit, then Reconnect to the RetroPie via SSH
+
+The RetroPie system will reboot.
+When it completes, you will arrive at a familiar EmulationStation screen.
+Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH -- except this time, you should not receive a confirmation prompt about the SSH key, and you will need to use the updated password that you just set.
