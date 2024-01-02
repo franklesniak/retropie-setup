@@ -181,7 +181,7 @@ Click `Yes, I'm sure`.
 Approve the prompt and/or enter credentials when needed.
     - Close balenaEtcher when done.
 
-### Perform Initial Wireless Configuration
+### Perform Initial Wireless Configuration on Raspberry Pi OS Lite
 
 These steps are only necessary if you intend to connect the Raspberry Pi to a Wi-Fi connection instead of a wired (Ethernet) connection.
 
@@ -226,7 +226,7 @@ These steps are only necessary if you intend to connect the Raspberry Pi to a Wi
 
 Keep Notepad++ open for the next step.
 
-**Note**: to read more about this process, see [this guide for preparing a microSD card for Wi-Fi](https://raspberrypi.stackexchange.com/a/57023/78201)
+**Note**: to read more about this process, see [this guide for preparing a microSD card for Wi-Fi](https://raspberrypi.stackexchange.com/a/57023/78201).
 
 ### Setup and Boot Up the Raspberry Pi
 
@@ -317,8 +317,47 @@ Approve the prompt and/or enter credentials when needed.
 
 ### Disconnect and Reconnect the RetroPie Storage Device; Start Notepad++
 
-1. Remove the RetroPie storage device from the technician's computer, then reconnect it.
-1. If it isn't already open, start Notepad++.
+1. Remove the RetroPie storage device from the technician's computer.
+1. If the device is the Argon ONE m.2 SATA Expansion Board, wait two minutes.
+1. Reconnect the storage device to the technician's computer.
+1. If it isn't already open, start Notepad++. on the technician's computer.
+1. On the technician's computer, open `Computer` and wait for the `boot` drive to appear.
+It may take up to five minutes.
+1. If, after five minutes, the boot drive has not appeared, then continue with these steps:
+    - On the technician's computer, open an elevated Command Prompt.
+You may do this by clicking `Start` and typing:
+
+      `cmd`
+
+      and then right-clicking `Command Prompt`, and clicking `Run as administrator`.
+You may receive a User Account Control (UAC) prompt to provide the required permissions.
+    - Next, at the Command Prompt, type:
+
+      `diskpart`
+
+      Wait for diskpart to start. It may take a few minutes.
+
+    - Next, at the `diskpart` prompt, type:
+
+      `list volume`
+
+    - A list of volumes will appear. Look for a 256 MB volume and note its volume number.
+    - Determine if the volume has a letter (`Ltr`) assigned.
+If it does, then try accessing the storage device from Windows Explorer (`Computer`) again.
+    - If it does not have a drive letter assigned, type:
+
+      `select volume 6`
+
+      (replace `6` with the number of the volume).
+Next, type:
+
+      `assign letter=G`
+
+      (replace `G` with an available drive letter)
+    - Verify the drive is accessible in Windows Explorer (`Computer`).
+If it is, in the Command Prompt, type:
+
+      `exit`
 
 ## Graveyard
 
