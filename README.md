@@ -726,3 +726,79 @@ Press the power button to turn it back on.
 
     (then press **Enter**).
 Verify that the output indicates a current temperature and no obvious errors.
+
+### Overclock the Raspberry Pi
+
+- **Note**: Do not overclock the Raspberry Pi if using the GPi Case
+- **Note**: Practically speaking, overclocking the Raspberry Pi is required if you want to play Nintendo 64 games.
+- **Note**: You should never overclock the Raspberry Pi unless you have active cooling in place (i.e., minimally a heat sink and a fan).
+- **Note**: Overclocking can reduce the life of your device. I do not recommend doing this unless you are comfortable and know what you are doing.
+
+With the disclaimers out of the way, here are the steps to overclock the Raspberry Pi:
+
+1. At the terminal prompt, type:
+
+    `sudo editor /boot/config.txt`
+
+    (then press **Enter**).
+1. Use the keyboard's arrow keys to advance the cursor to just below the line that reads
+
+    `#arm_freq=800`
+
+1. Below that line:
+    - On a Raspberry Pi 4B, enter the following:
+
+      ```text
+      # Overclock settings
+      arm_freq=2147
+      gpu_freq=750
+      ```
+
+    - On a Raspberry Pi 3B+, enter the following:
+
+      ```text
+      # Overclock settings
+      arm_freq=1400
+      gpu_freq=550
+      core_freq=550
+      sdram_freq=550
+      over_voltage=6
+      v3d_freq=550
+      ```
+
+      - Note: Some sources indicate that overclocking gpu_freq, core_freq, and sdram_freq is unnecessary. If you do not want to adjust these, they can be omitted from the file.
+1. Press **Ctrl** and **O** simultaneously to save the file, then press **Enter** to confirm the file name.
+1. Press **Ctrl** and **X** simultaneously to exit Editor.
+1. Reboot the RetroPie by typing the following at the terminal prompt:
+
+    `sudo reboot`
+
+    (then press **Enter**).
+1. The RetroPie system will reboot.
+1. Monitor the Raspberry Pi to confirm that it boots up normally and appears stable.
+    - Not every Raspberry Pi will run with these settings; if the Pi will not boot:
+      - Power it off and remove the storage device.
+      - Attach the storage device to the technician's computer, then open the drive labeled `boot`.
+      - Using Notepad++, open the file `config.txt` in the root of the `boot` drive.
+      - For a Raspberry Pi 4B, make the following modifications:
+        - First, try stepping the settings down to:
+
+          ```text
+          # Overclock settings
+          arm_freq=2000
+          gpu_freq=750
+          ```
+
+      - For a Raspberry Pi 3B+, make the following modifications:
+          - Reduce the value for `arm_freq` by 50 and try again.
+          - If you have gotten the `arm_freq` down to `1300` and it still will not boot, or if you see display artifacts, try lowering the `gpu_freq`, `core_freq`, and `v3d_freq` to `525`.
+      - Save the file.
+      - In the _Notification Area_ or _System Tray_, find the icon for `Safely Remove Hardware and Eject Media`. `Right-click` on it, then click `Eject boot (G:)` - or a similarly named item related to the connected storage device.
+      - In a few moments, you should receive a `Safe to Remove Hardware` notification.
+Disconnect the RetroPie storage device.
+      - If you do not receive the `Safe to Remove Hardware` notification, close all programs,  Windows Explorer windows, and Terminal/Command Prompt/PowerShell windows that could be using the storage device, then try again.
+      - If you still cannot safely remove the RetroPie storage device and are confident that every relevant program has been closed, disconnect the drive anyway.
+      - Reconnect the storage device to the RetroPie system and power it on.
+      - Monitor its boot and repeat if necessary.
+1. When the Raspberry Pi completes its boot, you will arrive at a familiar EmulationStation screen.
+Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
