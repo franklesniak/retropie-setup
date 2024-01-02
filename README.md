@@ -648,3 +648,13 @@ Once highlighted, press **Enter** to copy it to the clipboard.
 1. The RetroPie system will reboot.
 When it completes, you will arrive at a familiar EmulationStation screen.
 Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
+
+### Set a Password for Network File Access (SMB)
+
+1. At the terminal prompt, type:
+
+    `sudo smbpasswd -a pi`
+
+    (then press **Enter**).
+1. Next, when prompted for `New SMB password`, type the same password entered previously and press **Enter** when done.
+1. When prompted to `Retype new SMB password`, type the password again and press **Enter** when done.
