@@ -1090,6 +1090,97 @@ Use the arrow keys to select `Back`, then press **Enter**.
 Use the arrow keys to select `Back`, then press **Enter**.
 1. Use the arrow keys to select `Back` again, then press **Enter**.
 
+#### Install the Latest FBNeo from Source
+
+FinalBurn Neo is updated constantly; compile it from the latest source code to take advantage of the latest updates.
+
+1. Use the keyboard's arrow keys to select `main` (`Manage main packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `85` (`lr-fbneo`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install the Latest MAME
+
+Although "experimental", the latest MAME works well on Raspberry Pi 4B and faster RetroPie systems.
+Install it if you are on a Raspberry Pi 4 or faster.
+For more information see [this link](https://docs.google.com/spreadsheets/d/1Rq4shU1RUSdcc7cTVWeORMD-mcO6BwXwQ7TGw8f5_zw/edit#gid=1985896929)
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `107` (`lr-mame`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install MAME 2016
+
+On a Raspberry Pi 4, a subset of games run better on MAME 2016.
+Install it if you are on a Raspberry Pi 4 or similar single-board computer.
+For more information see [this link](https://docs.google.com/spreadsheets/d/1Rq4shU1RUSdcc7cTVWeORMD-mcO6BwXwQ7TGw8f5_zw/edit#gid=1985896929)
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `106` (`lr-mame2016`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install MAME 2010
+
+On a Raspberry Pi 4, a subset of games run better on MAME 2010.
+Install it if you are on a Raspberry Pi 4 or slower single-board computer.
+You do not need to install MAME 2010 if you are on a modern x86 computer.
+For more information see [this link](https://docs.google.com/spreadsheets/d/1Rq4shU1RUSdcc7cTVWeORMD-mcO6BwXwQ7TGw8f5_zw/edit#gid=1985896929)
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `104` (`lr-mame2010`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install MAME 2003 Plus
+
+On a Raspberry Pi 4, a subset of games run better on MAME 2003 Plus.
+Install it if you are on a Raspberry Pi 4 or slower single-board computer.
+You do not need to install MAME 2003 Plus if you are on a modern x86 computer.
+For more information see [this link](https://docs.google.com/spreadsheets/d/1Rq4shU1RUSdcc7cTVWeORMD-mcO6BwXwQ7TGw8f5_zw/edit#gid=1985896929)
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `102` (`lr-mame2003-plus`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install AdvancedMAME
+
+On a Raspberry Pi 4 and similar low-power, single-board computers, a subset of games run better on AdvancedMAME (`AdvMAME`).
+Install it if you are on a Raspberry Pi 4 or similar single-board computer.
+You do not need to install AdvancedMAME if you are on a modern x86 computer.
+For more information see [this link](https://docs.google.com/spreadsheets/d/1Rq4shU1RUSdcc7cTVWeORMD-mcO6BwXwQ7TGw8f5_zw/edit#gid=1985896929)
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `2` (`advmame`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
 #### Wrap-Up Optional Packages
 
 1. Use the keyboard's arrow keys to select `Back` again, then press **Enter**.
