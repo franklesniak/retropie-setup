@@ -1181,6 +1181,26 @@ For more information see [this link](https://docs.google.com/spreadsheets/d/1Rq4
 Use the arrow keys to select `Back`, then press **Enter**.
 1. Use the arrow keys to select `Back` again, then press **Enter**.
 
+#### Install SkyScraper
+
+The menu user interface in RetroPie (EmulationStation) allows for the display of game descriptions, screenshots, and video previews of games.
+These make the overall interface look very nice/polished.
+
+The act of downloading and preparing these descriptions/screenshots/video previews is called "scraping" and it is performed using a software utility known as a "scraper."
+
+Arguably, the best scraper to run on a RetroPie is called `skyscraper`.
+However, you may also run scraping operations remotely from the technician's computer.
+Nevertheless, if you want the ability to run scraping operations from the RetroPie system itself, you should install `skyscraper`.
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `233` (`skyscraper`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
 #### Wrap-Up Optional Packages
 
 1. Use the keyboard's arrow keys to select `Back` again, then press **Enter**.
