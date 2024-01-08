@@ -884,3 +884,208 @@ If instability is observed, return to the `Overclock the Raspberry Pi` section t
 1. The RetroPie system will reboot.
 When it completes, you will arrive at a familiar EmulationStation screen.
 Repeat the steps noted earlier to connect to the RetroPie from the technician's computer using SSH.
+
+### Install Optional RetroPie Packages
+
+1. At the terminal prompt, type the following command to start RetroPie setup:
+
+    `sudo ~/RetroPie-Setup/retropie_setup.sh`
+
+1. Use the keyboard's arrow keys to select `M` (`Manage packages`), then press **Enter**.
+
+#### Install 3DO Emulator (lr-opera)
+
+**Note**: This should only be performed on Raspberry Pi 4 or faster systems, or on modern x86 systems - and only when a Panasonic 3DO will be emulated.
+At the time of writing, many games may be too slow to play on a Raspberry Pi 4.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `120` (`lr-opera`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to compile.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Atari Jaguar Emulator (lr-virtualjaguar)
+
+**Note**: This should only be performed on Raspberry Pi 4 or faster systems, or on modern x86 systems - and only when an Atari Jaguar will be emulated.
+At the time of writing, many games may be too slow to play on a Raspberry Pi 4.
+See [this post](https://retropie.org.uk/forum/post/237237) for a list.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `151` (`lr-virtualjaguar`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to compile.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+**Note**: It may be beneficial to install `lr-mess`, as it reportedly emulates some Jaguar games better than `lr-virtualjaguar`.
+See [The RetroPie-Extra Project](https://github.com/zerojay/RetroPie-Extra)'s `lr-mess-jaguar.sh` script.
+
+#### Install Bandai WonderSwan Color Emulator (lr-beetle-wswan)
+
+**Note**: This should only be performed on systems where a Bandai WonderSwan Color will be emulated.
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `74` (`lr-beetle-wswan`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`,
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Coleco Colecovision Emulator (lr-bluemsx)
+
+**Note**: This should only be performed on systems where a Coleco Colecovision will be emulated.
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `75` (`lr-bluemsx`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to compile.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Nintendo Game & Watch Emulator (lr-gw)
+
+**Note**: This should only be performed on systems where Nintendo Game & Watch will be simulated.
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `97` (`lr-gw`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to compile.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Nintendo Gamecube Emulator (dolphin)
+
+**Note**: This should only be performed on modern x86 systems - and only when a Nintendo Gamecube will be emulated.
+
+**Note**: This is the same emulator used for the Nintendo Wii.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `11` (`dolphin`), then press **Enter**.
+1. (this is a placeholder) Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. (this is a placeholder) Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Nintendo Virtual Boy Emulator (lr-beetle-vb)
+
+**Note**: This should only be performed when a Nintendo Virtual Boy will be emulated.
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `73` (`lr-beetle-vb`), then press **Enter**.
+1. (this is a placeholder) Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. (this is a placeholder) Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Nintendo Wii Emulator (dolphin)
+
+**Note**: This should only be performed on modern x86 systems - and only when a Nintendo Gamecube will be emulated.
+
+**Note**: This is the same emulator used for the Nintendo Gamecube.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `11` (`dolphin`), then press **Enter**.
+1. (this is a placeholder) Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. (this is a placeholder) Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Sega Dreamcast Emulator (redream)
+
+**Note**: This should only be performed on Raspberry Pi 4 or faster systems, or modern x86 systems - and only when a Sega Dreamcast will be emulated.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `42` (`redream`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Sega Saturn Emulator (yabasanshiro or lr-beetle-saturn)
+
+**Note**: This should only be performed on Raspberry Pi 4 or faster systems, or on modern x86 systems - and only when a Sega Saturn will be emulated.
+
+##### Sega Saturn on Lower Powered Computers (Like the Raspberry Pi 4)
+
+At the time of writing, `yabasanshiro` is the best option for lower powered systems like the Raspberry Pi 4.
+In time, a libretro variant (`lr-yabasanshiro`) may be available in RetroPie Setup.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `61` (`yabasanshiro`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+##### Sega Saturn on Modern x86 Systems
+
+At the time of writing, `lr-beetle-saturn` is the best emulator to select for higher-powered systems, like a modern x86 computer.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `71` (`lr-beetle-saturn`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Sony Playstation 2 Emulator (PCSX2)
+
+**Note**: This should only be performed on modern x86 systems - and only when a Sony Playstation 2 will be emulated.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `34` (`pcsx2`), then press **Enter**.
+1. (this is a placeholder) Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. (this is a placeholder) Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install Sony Playstation Portable (PSP) Emulator (lr-ppsspp)
+
+**Note**: This should only be performed on Raspberry Pi 3B+ or faster systems, or modern x86 systems - and only when a Sony PSP will be emulated.
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `125` (`lr-ppsspp`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install ScummVM (lr-scummvm)
+
+**Note**: This should only be performed on Raspberry Pi 3B+ or faster systems, or modern x86 systems - and only when older PC games will be emulated.
+
+1. Use the keyboard's arrow keys to select `exp` (`Manage experimental packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `134` (`lr-scummvm`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
