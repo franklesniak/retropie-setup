@@ -1089,3 +1089,8 @@ Use the arrow keys to select `Back`, then press **Enter**.
 1. When the software finishes, you will be back at the RetroPie Setup menu.
 Use the arrow keys to select `Back`, then press **Enter**.
 1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Wrap-Up Optional Packages
+
+1. Use the keyboard's arrow keys to select `Back` again, then press **Enter**.
+1. Use the keyboard's arrow keys to select `Exit`, then press **Enter**.
