@@ -1094,3 +1094,39 @@ Use the arrow keys to select `Back`, then press **Enter**.
 
 1. Use the keyboard's arrow keys to select `Back` again, then press **Enter**.
 1. Use the keyboard's arrow keys to select `Exit`, then press **Enter**.
+
+### Install Add-Ons Outside of RetroPie Setup
+
+#### Install Software for the Xbox Controller USB Dongle/Receiver
+
+If you are using an Xbox controller with the RetroPie, it's generally recommended that you use the [Xbox Wireless Adapter for Windows](https://www.gamestop.com/pc-gaming/pc-gaming-controllers/products/microsoft-xbox-series-x-wireless-controller-with-wireless-adapter-for-windows-10/226925.html) (a USB dongle/receiver), which gives more reliable connectivity and reduced lag.
+
+**Note**: Multiple controllers can share one USB adapter. If you intend to connect multiple Xbox controllers to one RetroPie, get [one controller with the wireless adapter](https://www.gamestop.com/pc-gaming/pc-gaming-controllers/products/microsoft-xbox-series-x-wireless-controller-with-wireless-adapter-for-windows-10/226925.html), and one or more [standard Xbox controllers](https://amzn.to/48JPNyx).
+
+To support the USB dongle/receiver, perform the following steps:
+
+1. Unplug your Xbox wireless controller.
+1. Clone the `xone` repository by typing:
+
+    `git clone https://github.com/medusalix/xone`
+
+    then press **Enter**.
+1. Install `xone` by typing:
+
+    `cd xone && sudo ./install.sh --release`
+
+    then press **Enter**.
+
+1. Download the firmware for the wireless dongle by typing:
+
+    `sudo apt update && sudo apt install -y curl cabextract && sudo xone-get-firmware.sh --skip-disclaimer`
+
+    then press **Enter**.
+1. Plug in your Xbox USB dongle/receiver.
+1. As needed, pair your controller(s):
+    - Hold down the Xbox button (at the top of the controller) for a moment to turn it on.
+The Xbox button should flash slowly.
+    - At the top of the controller, hold down the connect (`(((`) button until the Xbox button begins to flash more rapidly.
+    - Press the button at the end of the Xbox USB dongle/receiver.
+    - After a few moments, the controller's Xbox button should be lit and no longer flashing, indicating that pairing is complete.
+    - Repeat for any additional controllers.
