@@ -72,7 +72,7 @@ In addition to the core bill of materials, you will need some additional hardwar
 - A **microSD card** is required even if you are planning a build that uses SSD or NVMe storage.
 A microSD card is used to load Raspberry Pi OS Lite and update the firmware of your Raspberry Pi.
   - Pretty much any microSD card will do as long as the capacity is greater or equal to 8 GB.
-  - If you need to purchase a smaller, lower-cost microSD card **for the sole purpose of updating the Raspberry Pi's firmware**, I recommend this 64 GB one from SanDisk: [SanDisk Ultra 64GB microSD UHS-I Card with A1 Performance Rating - Affiliate Link](https://amzn.to/47j14ET).
+  - If you need to purchase a smaller, lower-cost microSD card **for the sole purpose of updating the Raspberry Pi's firmware**, I recommend this 64 GB one from SanDisk: [SanDisk Extreme 64GB microSDXC UHS-I Card with A2 Performance Rating - Affiliate Link](https://amzn.to/49TMk0w).
   - If you are building a RetroPie system and planning to use the microSD card for storage (as opposed to a SATA or NVMe SSD), you are going to want a larger card.
 In this case, I recommend this SanDisk Ultra 1.5TB one: [SanDisk Ultra 1.5TB microSDXC UHS-I card with A1 Performance Rating - Affiliate Link](https://amzn.to/41JNZmH).
 Or, for a slightly faster microSD card, get one with an A2 performance rating and slightly less capacity like this Lexar 1TB one: [Lexar PLAY 1TB microSDXC UHS-I card with A2 Performance Rating - Affiliate Link](https://amzn.to/3vqAqwo).
@@ -1176,6 +1176,26 @@ For more information see [this link](https://docs.google.com/spreadsheets/d/1Rq4
 1. Use the keyboard's arrow keys to select `2` (`advmame`), then press **Enter**.
 1. Use the keyboard's arrow keys to select `B` (`Install from pre-compiled binary`), then press **Enter**.
 1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from pre-compiled binary, then press **Enter**.
+1. Wait for the software to install.
+1. When the software finishes, you will be back at the RetroPie Setup menu.
+Use the arrow keys to select `Back`, then press **Enter**.
+1. Use the arrow keys to select `Back` again, then press **Enter**.
+
+#### Install SkyScraper
+
+The menu user interface in RetroPie (EmulationStation) allows for the display of game descriptions, screenshots, and video previews of games.
+These make the overall interface look very nice/polished.
+
+The act of downloading and preparing these descriptions/screenshots/video previews is called "scraping" and it is performed using a software utility known as a "scraper."
+
+Arguably, the best scraper to run on a RetroPie is called `skyscraper`.
+However, you may also run scraping operations remotely from the technician's computer.
+Nevertheless, if you want the ability to run scraping operations from the RetroPie system itself, you should install `skyscraper`.
+
+1. Use the keyboard's arrow keys to select `opt` (`Manage optional packages`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `233` (`skyscraper`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `S` (`Install from source`), then press **Enter**.
+1. Use the keyboard's arrow keys to select `Yes`, confirming that you want to install from source, then press **Enter**.
 1. Wait for the software to install.
 1. When the software finishes, you will be back at the RetroPie Setup menu.
 Use the arrow keys to select `Back`, then press **Enter**.
